@@ -138,3 +138,8 @@ function writeToFile() {
         fs.writeFileSync(outputPath, render(employees))
     }
 }
+async function main(){
+    await createManager();
+    writeToFile();
+}
+main();
